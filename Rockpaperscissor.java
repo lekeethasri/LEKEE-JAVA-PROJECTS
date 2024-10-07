@@ -1,3 +1,5 @@
+import java.util.Scanner;
+import java.util.Random;
 public class Rockpaperscissor {
     public static void main(String[] args){
     Boolean y=true;
