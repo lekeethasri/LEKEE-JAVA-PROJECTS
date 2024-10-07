@@ -31,11 +31,22 @@ public class Rockpaperscissor {
         if(comturn.equals("r"))System.out.println("computer won");
         else System.out.println("Player won");
 }
+y=false;
+while(true){
+    System.out.println("Enter true or false to continue");
+    if(s.hasNextBoolean()){
+        y=s.nextBoolean();
+        s.nextLine();
+        break;
+    }
+    else{
+        System.out.println("please Enter the valid input");
+        s.next();
+    }
+
 }
-System.out.println("Enter true or false");
-y=s.nextBoolean();
-if(y==false)
-System.out.println("Thanks for playing");
+if(!y)System.out.println("Thanks for playing!");
+}
 s.close();
 }
 }
