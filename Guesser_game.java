@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 public class Guesser_game{
     public static void main(String[] args){
         int n;
@@ -7,19 +9,21 @@ public class Guesser_game{
         int guesser=new Random().nextInt(10);
         System.out.println("Enter how many players are playing: ");
         n=s.nextInt();
-        int[] player =new int[n];
+        List<Integer> player=new ArrayList<Integer>();
         for(int i=1;i<=n;i++){
         System.out.println("Player "+i+" Enter your number: ");
         int playerguess=s.nextInt();
         if(playerguess==guesser)
-        player[i]=i;
+        player.add(i);
         }
-        if(player.length==0)System.out.println("No one won the game");
+        System.out.println("guesser number is "+guesser);
+        if(player.isEmpty())System.out.println("No one won the game");
         else{
-        System.out.println("players won")
-        for int item:player{
-            System.out.println(item);
+        System.out.println("won by");
+        for(int item:player){
+            System.out.println("player "+item+1);
         }
-    }          
+    }
+    s.close();          
     }
 }
