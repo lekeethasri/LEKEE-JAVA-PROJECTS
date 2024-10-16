@@ -11,7 +11,7 @@ public class Guesser_game{
         n=s.nextInt();
         List<Integer> player=new ArrayList<Integer>();
         for(int i=1;i<=n;i++){
-        System.out.println("Player "+i+" Enter your number: ");
+        System.out.println("Player"+i+" Enter your number: ");
         int playerguess=s.nextInt();
         if(playerguess==guesser)
         player.add(i);
@@ -21,7 +21,7 @@ public class Guesser_game{
         else{
         System.out.println("won by");
         for(int item:player){
-            System.out.println("player "+item+1);
+            System.out.println("player "+item);
         }
     }
     s.close();          
